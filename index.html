@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dropout Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>EdTech Student Dropout Prediction</h1>
+
+    <form action="/predict" method="post">
+
+        <label>Total Logins:</label>
+        <input type="number" name="total_logins" required>
+
+        <br><br>
+
+        <label>Total Videos Watched:</label>
+        <input type="number" name="total_videos" required>
+
+        <br><br>
+
+        <label>Total Assignments:</label>
+        <input type="number" name="total_assignments" required>
+
+        <br><br>
+
+        <button type="submit">
+            Predict
+        </button>
+
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+
+</body>
+
+</html>

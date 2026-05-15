@@ -1,0 +1,19 @@
+body {
+    font-family: Arial;
+    padding: 40px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+input {
+    padding: 8px;
+}
+
+button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+
